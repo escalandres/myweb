@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
 import Cookies from 'universal-cookie';
 
-import {Auth, MyWeb} from './components';
-
-
+import Auth from './components/Auth';
+import MyWeb from './components/MyWeb';
 
 import logo from './logo.svg';
 import './App.css';
 
 const cookies = new Cookies();
-
-const apiKey = 'sh7kywnkfxhv';
 const authToken = cookies.get("token");
 
 if(authToken){
@@ -23,18 +20,12 @@ if(authToken){
 }
 
 function App() {
+  // if(!authToken) return <Auth />
   return (
     <div className="App">
-      {/* <header className="App-header">
-        
-      </header>
-      <nav>
-        
-      </nav>
-      <main>
-        
-      </main> */}
-
+      
+      {/* <MyWeb /> */}
+      <Auth />
       
     </div>
   );
