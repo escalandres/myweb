@@ -1,32 +1,26 @@
-import React, { useState } from 'react';
-import Cookies from 'universal-cookie';
-
-import Auth from './components/Auth';
-import MyWeb from './components/MyWeb';
-
 import logo from './logo.svg';
 import './App.css';
+import Auth from './components/Auth';
 
-const cookies = new Cookies();
-const authToken = cookies.get("token");
-
-if(authToken){
-  const user = {
-    username: cookies.get('username'),
-    hashedPassword: cookies.get('hashedPassword'),
-    key: cookies.get('key')
-  }
-  
-}
 
 function App() {
-  // if(!authToken) return <Auth />
   return (
     <div className="App">
-      
-      {/* <MyWeb /> */}
-      <Auth />
-      
+      <header className="">
+        {/* <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a> */}
+        <Auth/>
+      </header>
     </div>
   );
 }
