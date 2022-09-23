@@ -4,6 +4,8 @@ import '../css/Auth.css'
 import cyber from '../assets/cyber2.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye, faEyeSlash } from "@fortawesome/free-brands-svg-icons"
+import { faDownload } from '@fortawesome/fontawesome-free-solid';
 import axios from 'axios';
 
 function mostrarContrasena(){
@@ -53,7 +55,7 @@ function Auth(){
                             <label for="key" id="login-key" className="s-mb-1 s-weight-semibold small">Contraseña</label>
                             <div className="input-group">
                                 <input id="key" type="password" name="key" className="form-control" placeholder="Escribe tu key" required/>
-                                <button id="log_show_key" className="btn btn-primary show-btn" type="button" onClick={mostrarKey}><FontAwesomeIcon icon="fa-solid fa-eye" /></button>
+                                <button id="log_show_key" className="btn btn-primary show-btn" type="button" onClick={mostrarKey}><FontAwesomeIcon className="fa-solid" icon="fa-eye" /></button>
                             </div>
                         </div>
                         <button className="w-100 btn btn-lg btn-primary submit-btn" type="submit">Iniciar sesión</button>
