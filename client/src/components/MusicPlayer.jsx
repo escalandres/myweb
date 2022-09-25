@@ -1,9 +1,9 @@
 import React,{Component} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBackward, faPlay, faForward } from '@fortawesome/fontawesome-free-solid'
+import { faBackward, faPlay, faForward, faPause } from '@fortawesome/fontawesome-free-solid'
 import '../css/musicPlayer.css';
 import Music from "../assets/music.jpg";
-import LaBachata from "../assets/Manuel Turizo - La Bachata (Letra).m4a";
+import LaBachata from "../assets/music/La Bachata.m4a";
 
 
 export default class MusicPlayer extends Component{
@@ -18,7 +18,7 @@ export default class MusicPlayer extends Component{
         const title = document.getElementById("title");
         const cover = document.getElementById("cover");
         // Songs Titles
-        const songs = ["happyrock", "jazzyfrenchy", "ukulele"];
+        const songs = ["La Bachata", "jazzyfrenchy", "ukulele"];
         // KeepTrack of song
         let songIndex = 0;
         // Initially load song details into DOM
@@ -26,12 +26,13 @@ export default class MusicPlayer extends Component{
         // Update song details
         function loadSong(song) {
             title.innerText = song;
-            audio.src = `./music/${song}.mp3`;
+            audio.src = `../assets/music/${song}.m4a`;
             cover.src = '../assets/music.jpg';
         }
         // Play Song
         function playSong() {
             musicContainer.classList.add("play");
+            // playBtn.querySelector(".play").
             playBtn.querySelector(".play").classList.remove("fa-play");
             playBtn.querySelector("i.fa").classList.add("fa-pause");
             audio.play();
@@ -116,7 +117,8 @@ export default class MusicPlayer extends Component{
                     </button>
                     <button id="play" className="action-btn action-btn-big">
                         {/* <i className="fa fa-play" aria-hidden="true"></i> */}
-                        <FontAwesomeIcon className="fa-solid icon play" icon={faPlay} aria-hidden="true"/>
+                        <FontAwesomeIcon id="play-btn" className="fa-solid icon" icon={faPlay} aria-hidden="true"/>
+                        <FontAwesomeIcon id="pause-btn" className="fa-solid icon hidden" icon={faPause} aria-hidden="true"/>
                     </button>
                     <button id="next" className="action-btn">
                         {/* <i className="fa fa-forward" aria-hidden="true"></i> */}

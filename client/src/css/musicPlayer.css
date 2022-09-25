@@ -119,3 +119,7 @@ height: 100%;
 width: 0%;
 transform: width 0.1s linear;
 }
+
+.hidden{
+    display: none;
+}
