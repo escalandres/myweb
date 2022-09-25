@@ -4,6 +4,8 @@ import './index.css';
 // import App from './App';
 import Router from './components/Router';
 import QRGenerator from './components/QRGenerator';
+import QRReader from './components/QRReader';
+
 
 import reportWebVitals from './reportWebVitals';
 
@@ -12,7 +14,7 @@ root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Router/> */}
-    <QRGenerator/>
+    <QRReader/>
   </React.StrictMode>
 );
 

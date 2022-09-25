@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import 'bulma/css/bulma.min.css';
 import '../css/Auth.css'
 import cyber from '../assets/cyber2.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faEyeSlash } from "@fortawesome/free-brands-svg-icons"
-import { faDownload } from '@fortawesome/fontawesome-free-solid';
-import axios from 'axios';
 
 function mostrarContrasena(){
     var pass = document.getElementById("password");

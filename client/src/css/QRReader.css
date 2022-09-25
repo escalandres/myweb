@@ -1,12 +1,12 @@
 /* Import Google Font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
+.container{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
+.body{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,6 +61,11 @@ form .content p{
     color: #0B85FF;
     margin-top: 15px;
     font-size: 16px;
+}
+
+.icon{
+    color: #0B85FF;
+    font-size: 85px;
 }
 .wrapper .details{
     opacity: 0;

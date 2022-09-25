@@ -50,7 +50,7 @@ export default class QRGenerator extends Component{
             //             link.setAttribute('download', 'qr.png');
             //             document.body.appendChild(link);
             //             link.click();
-            //             document.body.removeChild(link);
+            //             document.body.removeChild(link);  
             //     })
             const url = source;
 
