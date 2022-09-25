@@ -2,9 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
-import Router from './components/Router';
-import QRGenerator from './components/QRGenerator';
-import QRReader from './components/QRReader';
+// import Router from './components/Router';
+// import QRGenerator from './components/QRGenerator';
+// import QRReader from './components/QRReader';
+import MyWeb from './components/MyWeb';
+import SpeechApp from './components/SpeechApp';
 
 
 import reportWebVitals from './reportWebVitals';
@@ -14,7 +16,9 @@ root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Router/> */}
-    <QRReader/>
+    {/* <QRReader/> */}
+    {/* <MyWeb /> */}
+    <SpeechApp/>
   </React.StrictMode>
 );
 
