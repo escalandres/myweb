@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bulma/css/bulma.min.css';
-import '../css/Auth.css'
+import '../css/auth.css'
 import cyber from '../assets/cyber2.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

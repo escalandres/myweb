@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-import '../css/QRGenerator.css';
+import '../css/qrGenerator.css';
 
 
 function speak(message, language = 'en-US') {

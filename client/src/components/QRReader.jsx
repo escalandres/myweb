@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-import '../css/QRReader.css';
+import '../css/qrReader.css';
 // import fontawesome from '@fortawesome/fontawesome'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloudUploadAlt } from '@fortawesome/fontawesome-free-solid'

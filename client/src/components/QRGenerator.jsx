@@ -1,6 +1,6 @@
-import React,{Component, useRef, useEffect} from "react";
+import React,{Component} from "react";
 import axios from "axios";
-import '../css/QRGenerator.css';
+import '../css/qrGenerator.css';
 import fileDownload from 'js-file-download'
 
 export default class QRGenerator extends Component{
@@ -8,8 +8,8 @@ export default class QRGenerator extends Component{
         const wrapper = document.querySelector(".wrapper"),
         qrInput = wrapper.querySelector(".form input"),
         generateBtn = wrapper.querySelector(".form button"),
-        qrImg = wrapper.querySelector(".qr-code img"),
-        qrDownload = wrapper.querySelector(".qr-code a");
+        qrImg = wrapper.querySelector(".qr-code img");
+        // qrDownload = wrapper.querySelector(".qr-code a");
         const downloadBtn = document.querySelector("#download__btn")
         let preValue;
         var source;
@@ -71,7 +71,7 @@ export default class QRGenerator extends Component{
                         <header>
                             <h1>QR Code Generator</h1>
                             <p>Paste a url or enter text to create QR code</p>
-                            <a href="./QRReader"></a>
+                            {/* <a href="./QRReader"></a> */}
                         </header>
                         <div className="form">
                             <input id="form__input" type="text" spellCheck="false" placeholder="Enter text or url" />

@@ -7,7 +7,7 @@ import './index.css';
 // import QRReader from './components/QRReader';
 import MyWeb from './components/MyWeb';
 import SpeechApp from './components/SpeechApp';
-
+import MusicPlayer from './components/MusicPlayer';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -18,7 +18,8 @@ root.render(
     {/* <Router/> */}
     {/* <QRReader/> */}
     {/* <MyWeb /> */}
-    <SpeechApp/>
+    {/* <SpeechApp/> */}
+    <MusicPlayer/>
   </React.StrictMode>
 );
 
