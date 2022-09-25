@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Auth from './components/Auth';
-
+// import Router from './components/Router';
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
         >
           Learn React
         </a> */}
+        {/* <Router/> */}
         <Auth/>
       </header>
     </div>

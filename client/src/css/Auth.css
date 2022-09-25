@@ -263,7 +263,15 @@ border-top-right-radius: 10px;
 height: 40px;
 width: 320px;
 }
-/*Registro*/
+
+label{
+    text-align: left;
+    
+    
+}
+
+
+/* Registro */
 
 .form-signin {
 width: 100%;
@@ -303,9 +311,9 @@ margin-left: 1rem;
 margin-top: -1.5rem;
 width: 20px;
 }
-/* #label-lastname,#label-repeat{
+ #label-lastname,#label-repeat{
 
-} */
+} 
 .formulario__grupo-correcto .formulario__validacion-estado {
     color: #1ed12d;
     opacity: 1;
@@ -339,11 +347,13 @@ margin-top:0rem;
 #b-registro{
 margin-top: 0.5rem;
 }
+
 #login-lkey{
-margin-top: 1.5rem;
+    margin-top: 1.5rem;
 }
+
 #key{
-margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .input-form{

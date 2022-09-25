@@ -44,7 +44,7 @@ function Auth(){
                             </div>
                         </div>
                         <div className="input-form s-relative s-cross-center">
-                            <label for="password" id="login-lpassword" className="s-mb-1 s-weight-semibold small">Contraseña</label>
+                            <label for="password" id="" className="s-mb-1 s-weight-semibold small">Contraseña</label>
                             <div className="input-group">
                                 <input id="password" type="password" name="password" className="form-control" placeholder="Escribe tu contraseña" required/>
                                 <button id="log_show_password" className="btn btn-primary show-btn" type="button" onClick={mostrarContrasena}><FontAwesomeIcon className="fa-solid" icon="fa-eye-slash"/></button>
@@ -52,14 +52,14 @@ function Auth(){
                             </div>
                         </div>
                         <div className="input-form s-relative s-cross-center">
-                            <label for="key" id="login-key" className="s-mb-1 s-weight-semibold small">Contraseña</label>
+                            <label for="key" id="" className="s-mb-1 s-weight-semibold small">Contraseña</label>
                             <div className="input-group">
                                 <input id="key" type="password" name="key" className="form-control" placeholder="Escribe tu key" required/>
                                 <button id="log_show_key" className="btn btn-primary show-btn" type="button" onClick={mostrarKey}><FontAwesomeIcon className="fa-solid" icon="fa-eye" /></button>
                             </div>
                         </div>
                         <button className="w-100 btn btn-lg btn-primary submit-btn" type="submit">Iniciar sesión</button>
-                        <p className="mt-5 mb-3 text-muted">&copy; Escalandres</p>
+                        <p className="mt-5 mb-3 text-muted">&copy; Escalandres <span>{new Date().getFullYear()}</span></p>
                     </form>
                 </section>
             </main>
