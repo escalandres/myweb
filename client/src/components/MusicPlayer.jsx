@@ -3,13 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBackward, faPlay, faForward, faPause } from '@fortawesome/fontawesome-free-solid'
 import '../css/musicPlayer.css';
 import Music from "../assets/music.jpg";
-import LaBachata from "../assets/music/La Bachata.m4a";
+import witcher from "../assets/music/witcher.mp3";
 
 
 export default class MusicPlayer extends Component{
     componentDidMount() {
         const musicContainer = document.getElementById("music-container");
         const playBtn = document.getElementById("play");
+        const playIcon = document.getElementById("play-btn");
+        const pauseIcon = document.getElementById("pause-btn");
         const prevBtn = document.getElementById("prev");
         const nextBtn = document.getElementById("next");
         const audio = document.getElementById("audio");
@@ -17,8 +19,9 @@ export default class MusicPlayer extends Component{
         const progressContainer = document.getElementById("progress-container");
         const title = document.getElementById("title");
         const cover = document.getElementById("cover");
+        const aaudio = new Audio(witcher);
         // Songs Titles
-        const songs = ["La Bachata", "jazzyfrenchy", "ukulele"];
+        const songs = ["witcher", "jazzyfrenchy", "ukulele"];
         // KeepTrack of song
         let songIndex = 0;
         // Initially load song details into DOM
@@ -26,23 +29,25 @@ export default class MusicPlayer extends Component{
         // Update song details
         function loadSong(song) {
             title.innerText = song;
-            audio.src = `../assets/music/${song}.m4a`;
-            cover.src = '../assets/music.jpg';
+            // audio.src = `../assets/music/${song}.mp3`;
+            
+            // cover.src = '../assets/music.jpg';
         }
         // Play Song
         function playSong() {
             musicContainer.classList.add("play");
             // playBtn.querySelector(".play").
-            playBtn.querySelector(".play").classList.remove("fa-play");
-            playBtn.querySelector("i.fa").classList.add("fa-pause");
-            audio.play();
+            pauseIcon.classList.remove("hidden");
+            playIcon.classList.add("hidden");
+            aaudio.play();
         }
         // Pause Song
         function pauseSong() {
+            console.log('pause');
             musicContainer.classList.remove("play");
-            playBtn.querySelector("i.fa").classList.add("fa-play");
-            playBtn.querySelector("i.fa").classList.remove("fa-pause");
-            audio.pause();
+            pauseIcon.classList.add("hidden");
+            playIcon.classList.remove("hidden");
+            aaudio.pause();
         }
         // Previous Song
         function prevSong() {
@@ -106,7 +111,7 @@ export default class MusicPlayer extends Component{
                             <div className="progress" id="progress"></div>
                         </div>
                     </div>
-                    <audio src={LaBachata} id="audio"></audio>
+                    <audio src='' id="audio"></audio>
                     <div className="img-container">
                         <img src={Music} alt="music-cover" id="cover" />
                     </div>

@@ -106,10 +106,7 @@ header p{
 }
 
 textarea{
-    max-width: 98%;
-    max-height: 130px;
-    min-width: 98%;
-    min-height: 130px;
+    resize: none;
     width: 402px;
     height: 130px;
     border-radius: 5px;
